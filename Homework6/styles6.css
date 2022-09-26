@@ -8,14 +8,21 @@ body{
     /* Header */
 main{
     border-bottom: 2px solid #9C69E2;
-    padding: 0px 240px 0px;
+    padding-left:170px;
+    display: flex;
+    flex-direction: column;
 }
 header{
     width:100%; 
+    display: flex;
+    justify-content: center;
+   
 }
 .header{
-    padding: 50px 240px 0px;
+    margin-top: 50px;
     height: 60px;
+    width: 1100px;
+    justify-content: center;
     display: inline-flex;
     align-items: center;
     font-family: 'Lato', sans-serif;
@@ -23,35 +30,44 @@ header{
 .logo{
     width: 49px;
     height: 35px;
+    margin-right: 121px;
 }
 .header ul li{
   list-style: none;
+  transition: 0.7s;
   
 }
 .button-one{
-    padding:17px 69px 17px 29px ; 
-    position: absolute;
-    top: 61px;
-    right: 240px;
+    width: 210px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: #212353; 
     font-weight: 800; 
     background-color: white;
     border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 5px 0px #4B5D681A;
+    transition: 0.7s;
 }
-.direct-icon{
-    position: absolute;
-    top: 78px;
-    right: 270px;
+.button-one:hover{
+    background-color: #F063B8;
+    transition: 0.7s;
 }
 ul li a{
     text-decoration: none;
     color: #4B5D68;
     font-weight: 400px; 
 }
+ul li:hover{
+    background-color: #F063B8;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.7s;
+}
 nav ul{
-    margin-left: 121px;
+    margin-right: 418px;
     width: 322px; 
     display:inline-flex;
     justify-content: space-between;
@@ -62,6 +78,9 @@ nav ul{
   font-weight: 800; 
 }
 /* .main-one */
+.main-one{
+    display: flex;
+}
 .main-one h1{
     font-size: 80px;
     width: 645px;
@@ -88,9 +107,9 @@ nav ul{
     color: white;
 }
 .image1{
-    position: absolute;
-    left: 603px;
-    top: 336px;
+   position: absolute;
+   left: 500px;
+   top: 350px;
 }
 /* main-two */
 .main-two{
@@ -98,12 +117,14 @@ nav ul{
     display: flex;
     margin-top: 200px;
     border-radius: 40px;
+    width: 1117px;
+    height: 560px;
 }
 .main-two-one{
-    padding: 125px 92px 125px 0px;
+    margin: 125px 92px 125px 0px;
 }
 .image2{
-    padding: 32px 62px 24px 11px;
+    margin: 32px 62px 24px 11px;
 }
 .main-two-one h1{
     font-size: 40px;
@@ -119,6 +140,8 @@ nav ul{
 }
 /* Features */
 .feature{
+    width: 1117px;
+    height: 150px;
     text-align: center;
     margin-top: 150px;
     display: flex;
@@ -144,6 +167,8 @@ height: 58px;
     margin-top: 150px;
     gap: 92px;
     row-gap: 132px;
+    width: 1117px;
+    height: 600px;
 }
 .main-three h2{
     font-size: 24px;
@@ -199,12 +224,15 @@ margin-left: 20px;
     border-radius: 40px;
     margin-top: 180px;
     margin-bottom: 150px;
+     width: 1118px;
+    height: 809px;
 }
 .main-forth h2{
     color: white;
     padding-top:109px ;
     padding-left: 93px;
     font-size: 40px;
+   
 }
 .main-forth-one{
     background-color: white;
@@ -246,7 +274,7 @@ margin-left: 20px;
 }
 /* footer */
 footer{
-    padding: 100px 240px 96px 240px;
+    padding: 100px 240px 96px 170px;
 
 }
 .footer-one{
@@ -263,6 +291,11 @@ background-color: white;
 border-radius: 30px;
 border: none;
 box-shadow: 0px 5px 5px 0px #4B5D681A;
+transition: 0.7s;
+}
+.foot-button:hover{
+    background-color: #F063B8;  
+    transition: 0.7s;
 }
 .footer-one h2{
     font-size: 40px;
@@ -284,6 +317,12 @@ box-shadow: 0px 5px 5px 0px #4B5D681A;
     background-color: #F063B8;
     color: white;
     margin-right: 30px;
+    transition: 0.7s;
+}
+.Learn-more:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
 }
 .footer-four{
     width: 95%;
@@ -353,6 +392,10 @@ box-shadow: 0px 5px 5px 0px #4B5D681A;
 }
 .footer-eight h2{
     font-size: 16px;
+}
+.footer-five a{
+    text-decoration: none;
+    color: #212353;
 }
 .final-div{
     width: 100%;
