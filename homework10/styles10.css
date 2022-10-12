@@ -1,0 +1,136 @@
+body{
+    padding: 400px 0px 400px 400px;
+    background-image: url(./space.png);
+}
+.newton div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+   background: linear-gradient(0.25turn, rgb(56,36,271) 5%, rgb(128,213,191));
+    border-radius: 60px;
+    display: inline-flex;
+    margin: -3px;
+    transform-origin: 50px -200px;
+}
+.item-7{
+    animation: go-right 1s linear   alternate infinite;
+    background-color: rgb(128,213,191) ;
+}
+.newton div::before{
+    content: "";
+width: 1px;
+height: 200px;
+border: 1px solid white;
+position: absolute;
+top: -200px;
+left: 50%;
+}
+@keyframes go-right {
+  0%{
+transform: rotate(0);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-30deg)
+  }
+}
+.item1{
+    animation: go-left 1s linear 1s  alternate infinite ;
+}
+@keyframes go-left {
+    0%{
+        transform: rotate(0);
+          }
+          50%{
+            transform: rotate(0);
+          }
+          100%{
+            transform: rotate(30deg)
+          }
+}
+/* --------------------------swords---------------------- */
+.container{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container div{
+  border-radius: 30px;
+  position: relative;
+  width: 700px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: white;
+}
+.first-swords::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  left: 30px;
+  background-color: black;
+}
+.first-swords{
+  box-shadow: 0 0 6px 8px white;
+  animation: push-down 2s linear forwards infinite;
+}
+.second-swords{
+  box-shadow: 0 0 6px 8px white;
+  animation: turn-left 2s linear infinite;
+}
+.third-swords{
+  box-shadow: 0 0 6px 8px white;
+  animation: turn-right 2s linear  infinite;
+}
+@keyframes push-down{
+30%{
+  transform: translate(0px,100px);
+  opacity: 0;
+}
+80%{ transform: translate(0px,0px);
+
+}
+}
+@keyframes turn-left{
+ 30%{
+    transform: translateY(50px) rotate(70deg);
+   box-shadow:0 0 6px 8px rgb(34, 82, 239);
+   background-color: blue;
+  }
+  80%{
+    transform: rotate(0deg);
+  }
+
+}
+@keyframes turn-right{
+  30%{
+    transform: rotate(-70deg);
+   box-shadow:0 0 6px 8px red;
+   background-color: red;
+  }
+  80%{
+    transform: rotate(0deg);
+  }
+
+}
+.second-swords::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  right: 30px;
+ background-color: black;
+}
+.third-swords::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  left: 30px;
+  background-color: black;
+}
+
+
