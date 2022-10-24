@@ -7,11 +7,16 @@ header {
   background-image: url(./Path.png);
   background-repeat: no-repeat;
   height: 90%;
-  background-position: right -10% top 0%;
+  background-position: right -15% top 0;
 }
 @media screen and (min-width: 1200px) {
   header {
     padding-left: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    background-image: none;
   }
 }
 header .head {
@@ -282,6 +287,11 @@ footer {
   margin-top: 150px;
   font-family: "Roboto";
 }
+@media screen and (max-width: 292px) {
+  footer {
+    background-image: none;
+  }
+}
 footer .Price {
   padding-top: 220px;
   padding-bottom: 10%;
@@ -330,9 +340,14 @@ footer .Price .item3 button:hover {
   background-color: #505F98;
 }
 footer .foot-bottom {
-  height: 216px;
+  height: 216pxpx;
   background-color: #E7ECFF;
   padding-top: 60px;
+}
+@media screen and (max-width: 325px) {
+  footer .foot-bottom {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 576px) {
   footer .foot-bottom {
