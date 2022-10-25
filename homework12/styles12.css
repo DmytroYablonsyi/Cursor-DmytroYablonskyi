@@ -7,11 +7,17 @@ header {
   background-image: url(./Path.png);
   background-repeat: no-repeat;
   height: 90%;
+  width: 100%;
   background-position: right -15% top 0;
 }
 @media screen and (min-width: 1200px) {
   header {
     padding-left: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    width: 120%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -158,6 +164,11 @@ header .introduce img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    padding-left: 20%;
+  }
+}
 @media screen and (min-width: 1200px) {
   main {
     padding-left: 150px;
@@ -281,7 +292,10 @@ main button:hover {
 
 footer {
   background-image: url(./bottom.png);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 800px;
   width: 100%;
   margin-top: 150px;
@@ -290,6 +304,11 @@ footer {
 @media screen and (max-width: 292px) {
   footer {
     background-image: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    width: 120%;
   }
 }
 footer .Price {
@@ -340,7 +359,7 @@ footer .Price .item3 button:hover {
   background-color: #505F98;
 }
 footer .foot-bottom {
-  height: 216pxpx;
+  height: 30%;
   background-color: #E7ECFF;
   padding-top: 60px;
 }
@@ -356,12 +375,9 @@ footer .foot-bottom {
 }
 footer .foot-bottom .small {
   padding-bottom: 40px;
+  position: relative;
 }
-footer .foot-bottom hr {
-  width: 77%;
-  margin: auto;
-}
-footer .foot-bottom button {
+footer .foot-bottom .small button {
   font-family: "Roboto", sans-serif;
   width: 160px;
   height: 22px;
@@ -373,56 +389,71 @@ footer .foot-bottom button {
   width: 100px;
   height: 25px;
 }
-footer .foot-bottom button:hover {
+footer .foot-bottom .small button:hover {
   border: 1px solid grey;
   background-color: #505F98;
 }
-footer .foot-bottom .landie {
+footer .foot-bottom .small .landie {
   font-size: 26px;
   font-family: "Roboto", sans-serif;
   line-height: 38px;
   color: #37447E;
   font-weight: 700;
 }
-footer .navigation {
-  height: 100%;
+footer .foot-bottom .navigation {
+  border-top: 1px solid #CDD1D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 50%;
 }
-@media screen and (max-width: 768px) {
-  footer .navigation {
+@media screen and (max-width: 325px) {
+  footer .foot-bottom .navigation {
+    height: 20%;
+  }
+}
+@media screen and (max-width: 769px) {
+  footer .foot-bottom .navigation {
     display: flex;
     flex-direction: column;
   }
 }
-footer .navigation .icon {
+footer .foot-bottom .icon {
   display: flex;
   margin-top: 1%;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  footer .navigation .icon {
+  footer .foot-bottom .icon {
     display: flex;
     justify-content: center;
   }
 }
-footer .navigation .nav-foot {
+footer .foot-bottom .nav-foot {
   margin-top: 2%;
 }
 @media screen and (max-width: 768px) {
-  footer .navigation .nav-foot {
+  footer .foot-bottom .nav-foot {
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
-  footer .navigation .nav-foot nav {
+  footer .foot-bottom .nav-foot nav {
     display: flex;
     justify-content: center;
   }
 }
-footer .navigation ul {
+footer .foot-bottom ul {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
+  padding-left: 0;
   gap: 60px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -432,9 +463,9 @@ footer .navigation ul {
   color: #929ECC;
   list-style: none;
 }
-footer .navigation ul li {
+footer .foot-bottom ul li {
   transition: all 0.3s;
 }
-footer .navigation ul li:hover {
+footer .foot-bottom ul li:hover {
   font-size: 15px;
 }/*# sourceMappingURL=styles12.css.map */

@@ -16,17 +16,21 @@
 
  }
  body{
-    overflow-x: hidden;
+    overflow-x: hidden
   
  }
  header{
     @media screen and (min-width:1200px) {
         padding-left: 150px;
        }
+       @media screen and (max-width: 1200px) {
+        width: 120%;
+       }
     position: relative;
     background-image: url(./Path.png) ;
     background-repeat: no-repeat;
     height: 90%;
+    width: 100%;
     background-position: right -15% top 0;
     @media screen and (max-width:992px) {
         background-image: none;
@@ -141,7 +145,9 @@
 }
 // ----------------------main--------------------------
 main{
-   
+    @media screen and (max-width:1200px) {
+        padding-left: 20%;
+       }
     @media screen and (min-width:1200px) {
      padding-left: 150px;
     }
@@ -247,9 +253,15 @@ button{
 // -------------------footer-------------------
 footer{
     background-image: url(./bottom.png);
-   background-repeat: repeat;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
    @media screen and (max-width:292px) {
     background-image: none;
+   }
+   @media screen and (max-width: 1200px) {
+    width: 120%;
    }
     height: 800px;
     width: 100%;
@@ -296,7 +308,7 @@ footer{
        }
     }
     .foot-bottom{
-        height: 216pxpx;
+        height: 30%;
         background-color: #E7ECFF;
         padding-top: 60px;
         @media screen and (max-width:325px) {
@@ -309,12 +321,17 @@ footer{
         }
        .small{
          padding-bottom: 40px;
-       
-       }
-       hr{
-        width: 77%;
-        margin: auto;
-       }
+         position: relative;
+    //     &::before{
+    //     content: "";
+    //     width: 80%;
+    //     background-color: #37447E;
+    //     height: 1px;
+    //     position: absolute;
+    //     bottom: 20px;
+    //     left: 12%;
+    //     z-index: 1;
+    //    }
         button{
             @include button;
             width: 100px;
@@ -329,16 +346,28 @@ footer{
     }
     }
     .navigation{
-        height: 100%;
-        @media screen and (max-width:768px) {
+        border-top:1px solid #CDD1D4 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10%;
+        width: 80%;
+        height: 50%;
+        @media screen and (max-width:325px) {
+            height: 20%;
+     }
+        @media screen and (max-width:769px) {
            display: flex;
            flex-direction: column;
+    }
+   
     }
     .icon{
         display: flex;
         margin-top: 1%;
         gap: 40px;
-        justify-content: center;
+        justify-content: space-between;
         @media screen and (max-width:768px) {
             display: flex;
            justify-content: center;
@@ -358,9 +387,11 @@ footer{
           }
           }
           ul{
+            margin-top: 0;
+            margin-bottom: 0;
                    display: flex;
                    align-items: center;
-                  
+                   padding-left: 0;
                   gap: 60px;
                   cursor: pointer;
                   font-family: 'Roboto', sans-serif;
@@ -369,9 +400,7 @@ footer{
                   line-height: 24px;
                   color: #929ECC; 
                   list-style: none;
-        @media screen and (max-width:768px) {
-
-        }
+       
                   li{
                       transition: all 0.3s;
                       &:hover{
