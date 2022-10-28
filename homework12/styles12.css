@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  width: 100%;
 }
 
 header {
@@ -13,11 +13,6 @@ header {
 @media screen and (min-width: 1200px) {
   header {
     padding-left: 150px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  header {
-    width: 120%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -164,11 +159,6 @@ header .introduce img {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  main {
-    padding-left: 20%;
-  }
-}
 @media screen and (min-width: 1200px) {
   main {
     padding-left: 150px;
@@ -308,7 +298,7 @@ footer {
 }
 @media screen and (max-width: 1200px) {
   footer {
-    width: 120%;
+    width: 100%;
   }
 }
 footer .Price {
