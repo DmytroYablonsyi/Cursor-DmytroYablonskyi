@@ -144,13 +144,13 @@ header .introduce .image {
   margin-right: 0;
   height: 100%;
 }
-header .introduce img {
-  width: 100%;
-}
-@media screen and (max-width: 992px) {
-  header .introduce img {
+@media screen and (max-width: 1200px) {
+  header .introduce .image {
     display: none;
   }
+}
+header .introduce img {
+  width: 100%;
 }
 @media screen and (max-width: 1200px) {
   header .introduce img {
@@ -215,6 +215,11 @@ main .mobile-picture {
   width: 50%;
   height: 650px;
 }
+@media screen and (max-width: 992px) {
+  main .mobile-picture {
+    width: 100%;
+  }
+}
 main .mobile-picture img {
   width: 100%;
   height: 100%;
@@ -226,7 +231,7 @@ main .mobile-picture img {
 }
 @media screen and (max-width: 992px) {
   main .mobile-picture img {
-    width: 240%;
+    width: 100%;
     height: auto;
   }
 }
