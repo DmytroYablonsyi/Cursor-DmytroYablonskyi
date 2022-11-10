@@ -127,7 +127,7 @@ header{
     gap: 5px;
     border-radius: 5px;
     height: 40px;
-    width: 50%;
+    width: 130px;
 
  }
  .google{
@@ -135,7 +135,7 @@ header{
     gap: 5px;
     border-radius: 5px;
     height: 40px;
-    width: 50%;
+    width: 130px;
 }
 .google h4{
     font-size: 8px;
