@@ -12,8 +12,8 @@ document.writeln('<p>',`Mаксимальне значення:${productPriceMax
 
 let productPriceMin = Math.min(15.678, 123.965, 90.2345);
 
-console.log(`Мінімальне значення ${productPriceMin}`); 
-document.writeln('<p>',`Мінімальне значення ${productPriceMin}`,'</p>')
+console.log(`Мінімальне значення: ${productPriceMin}`); 
+document.writeln('<p>',`Мінімальне значення: ${productPriceMin}`,'</p>')
 
 // --------------task3------------------
 
@@ -92,8 +92,8 @@ let discount = (fullPrice * (randomDiscount/100));
 
 let discountPrice = (fullPrice - discount);
 
-console.log("Вартість товару з випадковою знижкою", Math.floor(discountPrice));
-document.writeln('<p>',"Вартість товару з випадковою знижкою", Math.floor(discountPrice),'</p>')
+console.log("Вартість товару з випадковою знижкою:" , (discountPrice.toFixed(2)));
+document.writeln('<p>',"Вартість товару з випадковою знижкою:" , (discountPrice.toFixed(2)),'</p>')
 
 
 // -----------------task11------------------
