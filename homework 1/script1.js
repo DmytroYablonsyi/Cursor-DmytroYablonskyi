@@ -38,12 +38,10 @@ document.writeln('<p>',`Вартість всіх товарів без копі
 
 // --------------task5------------------
 
-function roundTo(number, value){
-    return Math.round(number/value) * value
-}
+let roundTo = Math.round(fullPrice2/100) * 100;
 
-console.log("Вартість всіх товарів округлена до сотень:" , roundTo(fullPrice2, 100));
-document.writeln('<p>',"Вартість всіх товарів округлена до сотень:" , roundTo(fullPrice2, 100),'</p>')
+console.log(`Вартість всіх товарів округлена до сотень: ${roundTo}`);
+document.writeln('<p>',`Вартість всіх товарів округлена до сотень: ${roundTo}`,'</p>')
 
 
 // --------------task6------------------
