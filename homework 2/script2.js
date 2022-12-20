@@ -1,8 +1,8 @@
 let N = +prompt("Введіть початкове число");
 
-while(!Number.isInteger(N) || isNaN(N)) {
+while(!Number.isInteger(N) || isNaN(N)|| N < 0) {
 
-alert("Потрібно ввести ціле число");
+alert("Потрібно ввести ціле число, яке більше нуля");
 
 N = +prompt("Введіть початкове число");
 
@@ -10,9 +10,9 @@ N = +prompt("Введіть початкове число");
 
 let M = +prompt("Введіть кінцеве число");
 
-while(!Number.isInteger(M) || isNaN(M)) {
+while(!Number.isInteger(M) || isNaN(M)||M < N) {
 
-    alert("Потрібно ввести ціле число");
+    alert("Потрібно ввести ціле число, яке більше початкового числа");
     
     M = +prompt("Введіть кінцеве число");
     
