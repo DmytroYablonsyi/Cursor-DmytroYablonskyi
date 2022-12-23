@@ -9,24 +9,24 @@ function getPairs(arr){
       return [f, male[index]]
     })
 }
-function getStudentTheme(pairs,themes){
-  return pairs.map((pair,index)=> {
+function getStudentTheme(arr,themes){
+  return arr.map((pair,index)=> {
       return [pair.join(" і "),themes[index]]
   }) 
 }
 
-function getMarks(students,marks){
-  return students.map((student,index)=> {  
+function getMarks(arr,marks){
+  return arr.map((student,index)=> {  
     return [student, marks[index]]
   })
 }
 
-function getRandomMarks(pairs){
+function getRandomMarks(arr){
   function generateRandomInteger(min, max) {
     return Math.floor(min + Math.random()*(max - min + 1))
   };
   
-  return pairs.map((pair)=> {
+  return arr.map((pair)=> {
     const randomMark = generateRandomInteger(1,5);
     return [...pair, randomMark]
   })
