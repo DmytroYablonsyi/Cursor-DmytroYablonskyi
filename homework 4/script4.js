@@ -36,7 +36,7 @@ const theme = getStudentTheme(pairs,themes);
 const randomResult = getRandomMarks(theme);
 const studentMarks = getMarks(students, marks)
 
-console.log("Function #1",[pairs])
-console.log("Function #3",[theme])
-console.log("Function #2",[studentMarks])
-console.log("Function #4",[randomResult])
+console.log("Function #1",pairs)
+console.log("Function #3",theme)
+console.log("Function #2",studentMarks)
+console.log("Function #4",randomResult)
