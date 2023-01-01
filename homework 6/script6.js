@@ -84,7 +84,7 @@ function getBestStudent(students){
 }
 // task 6
 function getWordLetters(word){
-    const occurances = word.split('').reduce((acc,value)=>{
+    const count = word.split('').reduce((acc,value)=>{
            if(!acc[value]){
                return {
                    ...acc,
@@ -97,7 +97,7 @@ function getWordLetters(word){
                }
            } 
        },{})
-      return occurances
+      return count
    }
  
    console.log("Function №1:", getSubjects(students[2]));
@@ -105,5 +105,5 @@ function getWordLetters(word){
    console.log("Function №3:", getStudentInfo(students[2]));
    console.log("Function №4:", getStudentsName(students));
    console.log("Function №5:", getBestStudent(students));
-   console.log("Function №6:", getWordLetters("Ukraine"));
+   console.log("Function №6:", getWordLetters("test"));
   
