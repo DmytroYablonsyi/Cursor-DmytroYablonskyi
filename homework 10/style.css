@@ -1,0 +1,23 @@
+body{
+    background-image: url(./picture/seaside.png);
+}
+#container{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+.button{
+    width: 75px;
+    height: 30px;
+    font-size: 30px;
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+    
+   
+}
