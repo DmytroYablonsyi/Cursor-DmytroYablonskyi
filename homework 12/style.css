@@ -1,0 +1,115 @@
+ body{
+    background-image: url(./picture/main\ background.png);
+    color: white;
+ } 
+#container{
+    margin: auto;
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-image: url(./picture/starwars5.png);
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+  
+}
+#buttonTwo{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.star_wars5{
+    font-family: "Roboto";
+    position: absolute;
+    top: 500px;
+    text-align: center;
+    font-size: 26px;
+}
+#button{
+   position: absolute;
+   top: 500px;
+    
+}
+#buttonThree{
+   
+    display:none;
+}
+#buttonFour{
+    display:none;
+}
+.planet{
+    display:inline-flex;
+    gap: 100px;
+    height: 100px;
+   width: 200px;
+   font-size: 36px;
+   font-family: 'Shadows Into Light', cursive;
+}
+.planetContainer{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planetHeader{
+    display: none;
+    margin: auto;
+    width: 200px;
+    line-height: 100px;
+}
+button{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border: 1px solid rgb(255, 47, 47);
+    font-size: 20px;
+    background-color:blue ;
+    position: relative;
+    color:#ff0a0a;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: all .7s;
+    box-shadow: 0 0 2px 2px rgb(190, 255, 92);
+}
+button:hover{
+    width: 300px;
+    height: 50px;
+    transition: 0.5s;
+    border: 3px dashed rgb(255, 47, 47);
+    background-color:#ff0a0a;
+    color: blue;
+
+}
+ 
+#input{
+   margin-top: 500px;
+}
+.characters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 22px;
+    background-color: rgb(7, 82, 82);
+}
+.characterContainer{
+    width: 50%;
+    margin: auto;
+}
+.pictureBlock{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
