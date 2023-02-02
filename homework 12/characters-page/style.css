@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+body{
+    background-image: url(./picture/main\ background.png);
+    color: white;
+ } 
+button{
+	padding: 1rem;
+    width: fit-content;
+    font-family: 'Itim', cursive;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color:rgb(173, 119, 119) ;
+    position: relative;
+    color:black;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 3px white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .7s;
+}
+button:hover{
+    height: 45px;
+    transition: 0.5s;
+    border: 3px dashed rgb(255, 47, 47);
+    background-color:#ff0a0a;
+    color: blue;
+
+}
+.character{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    font-family: 'Itim', cursive;
+    font-size: 22px;
+    background-color: rgb(7, 82, 82);
+}
+.characterContainer{
+    width: 50%;
+    margin: auto;
+}
+.pictureBlock{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+.characterList{
+    font-family: 'Itim', cursive;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
