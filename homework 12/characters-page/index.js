@@ -34,17 +34,18 @@ window.addEventListener('DOMContentLoaded', async ()=> {
 
 	const filmsData = await getPeopleByFilms(episode);
 		const respByCharacter = await filmsData["characters"];
-		respByCharacter.forEach(element => {
-			fetch(element).then(res => {
+		const a = await respByCharacter.forEach(elem => {
+			fetch(elem).then(res => {
 			 res.json().then(res =>{createBlock(res)})
 			 })
+
 		}); 
 
 	function getCharacterKeys(isWookieFormat){
 		return {
 			name: isWookieFormat ? 'whrascwo' : 'name',
 			birth_year: isWookieFormat ? 'rhahrcaoac_roworarc' : 'birth_year', 
-			gender:isWookieFormat ? 'rrwowhwaworc' : 'Gender'
+			gender: isWookieFormat ? 'rrwowhwaworc' : 'gender'
 		}
 }
 const keys = getCharacterKeys(isWookieFormat);
@@ -52,6 +53,7 @@ const keys = getCharacterKeys(isWookieFormat);
 const name = keys['name'];
 const birth = keys['birth_year']
 const charGender = keys['gender']
+console.log(charGender)
 
 function createBlock(charact){
 	const mainCharactersContainer = document.createElement("div");
